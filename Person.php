@@ -8,14 +8,9 @@ class Person{
     $this->job = new Job();
     $this->job->setSalary(10000);
   }
-
-  public function getSalary(): int{
+  public function getSalary(): int
+  {
     return $this->job->getSalary();
   }
 }
-$person = new Person();
-$person->getSalary();
-
-$salary = $person->getSalary();
-print ($salary);
 ?>

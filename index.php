@@ -7,8 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-<?php
+
+    <?php
+
         require('./Person.php');
+        
+        $person = new Person();
+        $salary = $person->getSalary();
+        
+        print($salary);
+        
     ?>
 </body>
 </html>
